@@ -1,0 +1,18 @@
+.center() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex(@f1, @f2) {
+    display: flex;
+    justify-content: @f1;
+    align-items: @f2;
+}
+
+body {
+    background: #fafafa;
+    .flex(center, start);
+}
+
+
